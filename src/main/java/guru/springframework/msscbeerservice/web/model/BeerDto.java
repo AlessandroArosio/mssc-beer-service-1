@@ -22,7 +22,7 @@ public class BeerDto {
 
     private String beerName;
 
-    private PrivateBeerStyleEnum beerStyle;
+    private BeerStyleEnum beerStyle;
 
     private Long upc;
 
