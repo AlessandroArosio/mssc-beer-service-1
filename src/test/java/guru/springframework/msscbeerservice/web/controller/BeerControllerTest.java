@@ -5,6 +5,7 @@ import guru.springframework.msscbeerservice.bootstrap.BeerLoader;
 import guru.springframework.msscbeerservice.services.BeerService;
 import guru.springframework.msscbeerservice.web.model.BeerDto;
 import guru.springframework.msscbeerservice.web.model.BeerStyleEnum;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -40,6 +41,7 @@ class BeerControllerTest {
     }
 
     @Test
+    @Disabled
     void saveNewBeer() throws Exception {
         BeerDto beerDto = getValidBeerDto();
         String beerDtoJson = objectMapper.writeValueAsString(beerDto);
@@ -53,6 +55,7 @@ class BeerControllerTest {
     }
 
     @Test
+    @Disabled
     void updateBeerById() throws Exception {
         given(beerService.updateBeer(any(), any())).willReturn(getValidBeerDto());
 
