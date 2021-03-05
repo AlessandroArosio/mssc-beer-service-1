@@ -16,6 +16,10 @@
 
     <description>MSSC Beer Service</description>
 
+    <properties>
+        <docker.image.prefix>alessandroarosio</docker.image.prefix>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
